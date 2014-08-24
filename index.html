@@ -2,9 +2,30 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title></title>
+	<title>Knockout-task</title>
+	<link rel="stylesheet" href="stylesheets/style.CSS">
 </head>
 <body>
-
+	<div class="wrapper">
+		<h1>Легкое использование существующих электронных документов(инструкций)</h1>
+		<div class="list">
+			<p>Список литературы:</p>
+			<ul class="list-literature" data-bind="foreach: literature">
+				<li class="name-literature" data-bind="text: name"></li>
+				<input type="checkbox">
+			</ul>
+		</div>
+		<div class="send">
+			<p>E-mail:</p>
+			<input type="text">
+			<p>Тема:</p>
+			<input type="text">
+			<p>Текст сообщения:</p>
+			<textarea name="" id="" cols="30" rows="10"></textarea>
+			<button type="submit">Отправить</button>
+		</div>
+	</div>
+	<script src="scripts/knockout-3.1.0.js"></script>
+	<script src="scripts/js.js"></script>
 </body>
 </html>

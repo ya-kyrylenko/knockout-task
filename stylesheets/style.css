@@ -1,0 +1,18 @@
+.send{
+	float: right;
+	position: relative;
+}
+.list-literature{
+	width: 600px;
+	position: relative;
+	/* float: left; */
+}
+li{
+	display: inline-block;
+}
+.list-literature input{
+	float: right;
+}
+.list-literature {
+	float: left;
+}
