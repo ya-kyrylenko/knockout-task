@@ -12,17 +12,32 @@
 			<p>Список литературы:</p>
 			<ul class="list-literature" data-bind="foreach: literature">
 				<li class="name-literature" data-bind="text: name"></li>
-				<input type="checkbox">
+				<input type="checkbox" data-bind="value: name, checked: $root.selectedList">
 			</ul>
 		</div>
 		<div class="send">
 			<p>E-mail:</p>
-			<input type="text">
+			<input type="text" data-bind="value: mail">
 			<p>Тема:</p>
-			<input type="text">
+			<input type="text" data-bind="value: theme">
 			<p>Текст сообщения:</p>
-			<textarea name="" id="" cols="30" rows="10"></textarea>
-			<button type="submit">Отправить</button>
+			<textarea name="" id="" cols="20" rows="5" data-bind="value: textMessage"></textarea>
+			<p>Прикрепленные файлы</p>
+			<ol data-bind="foreach: $root.selectedList">
+				<li data-bind="text: $data"></li>
+			</ol>
+			<button type="submit" data-bind="click: filledDataTrue">Отправить</button>
+		</div>
+		<div class="alert" data-bind="visible: filledData">
+			<p>Mail</p>
+			<p data-bind="text: mail"></p>
+			<p>Theme</p>
+			<p data-bind="text: theme"></p>
+			<p>Text Message</p>
+			<p data-bind="text: textMessage"></p>
+			<ol data-bind="foreach: $root.selectedList">
+				<li data-bind="text: $data"></li>
+			</ol>
 		</div>
 	</div>
 	<script src="scripts/knockout-3.1.0.js"></script>

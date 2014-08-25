@@ -1,4 +1,6 @@
 .send{
+	/* right: 200px; */
+	width: 600px;
 	float: right;
 	position: relative;
 }
@@ -7,7 +9,7 @@
 	position: relative;
 	/* float: left; */
 }
-li{
+.list li{
 	display: inline-block;
 }
 .list-literature input{
@@ -15,4 +17,17 @@ li{
 }
 .list-literature {
 	float: left;
+}
+
+.alert{
+	width: 50%;
+	height: 80%;
+	position: absolute;
+	left: 25%;
+	top: 10%;
+	/* color: #DCAA03; */
+	border-radius: 20px;
+	border: 3px solid #37BB10;
+	background: #A2FC70;
+	text-align: center;
 }
