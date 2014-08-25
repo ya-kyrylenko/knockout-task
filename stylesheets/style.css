@@ -1,13 +1,13 @@
 .send{
-	/* right: 200px; */
+	top: -60px;
 	width: 600px;
 	float: right;
 	position: relative;
+	border-left: 1px solid #D5D5D5;
+	padding-left: 60px;
 }
 .list-literature{
 	width: 600px;
-	position: relative;
-	/* float: left; */
 }
 .list li{
 	display: inline-block;
@@ -25,9 +25,23 @@
 	position: absolute;
 	left: 25%;
 	top: 10%;
-	/* color: #DCAA03; */
 	border-radius: 20px;
 	border: 3px solid #37BB10;
 	background: #A2FC70;
 	text-align: center;
+}
+h1 {
+	color: #CE3F3F;
+}
+
+.send input,textarea{
+	width: 200px;
+}
+.bold{
+	font-weight: bold;
+	font-size: 20px;
+}
+.displ{
+	font-size: 20px;
+	color: #63A0A0;
 }
